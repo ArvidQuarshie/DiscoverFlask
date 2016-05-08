@@ -21,8 +21,10 @@ def login():
     if request.method=='POST':
         if request.form['username']!='admin' or request.form['password'!='admin':
                                                               error="invalid credentials.Please try again"
+                                                             else:
+                                                             return redirect(url_for('home'))
                                                              
-           
+         return render_template('login.html',error=error)  
                                                              
 #initializes the localhost and allows for debugging
 if __name__=='__main__':
