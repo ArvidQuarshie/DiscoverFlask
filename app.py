@@ -14,6 +14,16 @@ app=Flask(__name__)
 def welcome():
     return render_template("welcome.html")
 
+@app.route('/login',methods=['GET','POST'])
+def login():
+    error=None
+    return render_template('login.html',error=error)
+    if request.method=='POST':
+        if request.form['username']!='admin' or request.form['password'!='admin':
+                                                              error="invalid credentials.Please try again"
+                                                             
+           
+                                                             
 #initializes the localhost and allows for debugging
 if __name__=='__main__':
     app.run(debug=True)

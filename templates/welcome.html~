@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>
+Welcome
+</title>
+
+<head>
+<body>
+<h1>This is a welcome page</h1>
+
+<a href="/"><h1>Hello World</h1> </a>
+</body>
+
+
+</html>
